@@ -1,0 +1,46 @@
+<div class="calculator">
+  <input type="text" [value]="expression" readonly />
+  <div class="buttons">
+    <button
+      *ngFor="
+        let key of [
+          'C',
+          '()',
+          '/',
+          '←',
+          '7',
+          '8',
+          '9',
+          '*',
+          '4',
+          '5',
+          '6',
+          '-',
+          '1',
+          '2',
+          '3',
+          '+',
+          'G',
+          '0',
+          '.',
+          '='
+        ]
+      "
+      (click)="press(key)"
+    >
+      {{ key }}
+    </button>
+  </div>
+</div>
+
+<!-- Var olan tuş takımı ve input burada varsayılmıştır -->
+
+<!-- Geçmişi gösteren alan -->
+<div *ngIf="historyVisible" class="history-box">
+  <h3>Geçmiş</h3>
+  <ul>
+    <li *ngFor="let entry of history">
+      {{ entry }}
+    </li>
+  </ul>
+</div>
