@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { CalculatorService } from './calculator.service';
 import { CommonModule } from '@angular/common';
 import { HistoryService } from '../services/history.service';
+import { DoubleDigitPipe } from '../pipes/double-digit-pipe';
 
 @Component({
   selector: 'app-calculator',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, DoubleDigitPipe],
   templateUrl: './calculator.component.html',
   styleUrls: ['./calculator.component.scss'],
 })

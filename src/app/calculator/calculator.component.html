@@ -1,5 +1,5 @@
 <div class="calculator">
-  <input type="text" [value]="expression" readonly />
+  <input type="text" [value]="expression | doubleDigit" readonly />
   <div class="buttons">
     <button
       *ngFor="
@@ -40,7 +40,7 @@
   <h3>Geçmiş</h3>
   <ul>
     <li *ngFor="let entry of history">
-      {{ entry }}
+      {{ entry | doubleDigit }}
     </li>
   </ul>
 </div>
