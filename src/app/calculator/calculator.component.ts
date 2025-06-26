@@ -16,6 +16,28 @@ export class CalculatorComponent {
   result = '';
   historyVisible = false;
   history: string[] = [];
+  keys: string[] = [
+    'C',
+    '()',
+    '/',
+    '←',
+    '7',
+    '8',
+    '9',
+    '*',
+    '4',
+    '5',
+    '6',
+    '-',
+    '1',
+    '2',
+    '3',
+    '+',
+    'G',
+    '0',
+    '.',
+    '=',
+  ];
 
   constructor(
     private calcService: CalculatorService,

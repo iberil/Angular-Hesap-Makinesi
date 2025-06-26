@@ -1,51 +1,48 @@
-<div class="calculator">
-  <input type="text" [value]="expression | doubleDigit" readonly />
-  <div class="buttons">
-    <button
-      *ngFor="
-        let key of [
-          'C',
-          '()',
-          '/',
-          '←',
-          '7',
-          '8',
-          '9',
-          '*',
-          '4',
-          '5',
-          '6',
-          '-',
-          '1',
-          '2',
-          '3',
-          '+',
-          'G',
-          '0',
-          '.',
-          '='
-        ]
-      "
-      (click)="press(key)"
-    >
-      <ng-container *ngIf="key === 'G'; else normalKey">
-        <img src="assets/icons/history.svg" alt="Geçmiş" class="icon" />
-      </ng-container>
+<div class="min-h-screen bg-gray-100 flex items-center justify-center">
+  <div class="w-full max-w-xs md:max-w-sm">
+    <div class="bg-white/60 backdrop-blur-xl shadow-2xl rounded-2xl p-4 sm:p-6">
+      <div class="text-center text-2xl font-bold text-gray-700 mb-4"></div>
 
-      <ng-template #normalKey>{{ key }}</ng-template>
-    </button>
+      <!-- Ekran -->
+      <input
+        type="text"
+        [value]="expression | doubleDigit"
+        readonly
+        class="w-full h-20 text-4xl text-right bg-gray-200/80 rounded-lg p-4 mb-4 shadow-inner focus:outline-none font-mono tracking-wider"
+      />
+
+      <!-- Tuşlar -->
+      <div class="grid grid-cols-4 gap-2 sm:gap-3">
+        <button
+          *ngFor="let key of keys"
+          (click)="press(key)"
+          [ngClass]="{
+            'bg-blue-500 hover:bg-blue-600 text-white': key === '=',
+            'bg-red-500 hover:bg-red-600 text-white': key === 'C',
+            'bg-gray-200 hover:bg-gray-300': !['=', 'C'].includes(key)
+          }"
+          class="aspect-square rounded-lg text-xl sm:text-2xl font-semibold transition-colors duration-200 flex items-center justify-center shadow-md active:shadow-inner"
+        >
+          <ng-container *ngIf="key === 'G'; else normalKey">
+            <img src="assets/icons/history.svg" alt="Geçmiş" class="w-7 h-7" />
+          </ng-container>
+          <ng-template #normalKey>{{ key }}</ng-template>
+        </button>
+      </div>
+      <!-- Geçmiş -->
+      <div
+        *ngIf="historyVisible"
+        class="mt-4 p-3 bg-gray-200/80 rounded-lg shadow-inner"
+      >
+        <h3 class="text-lg font-bold text-gray-600 mb-2">Geçmiş</h3>
+        <ul class="text-right font-mono text-gray-700">
+          <li *ngFor="let entry of history" class="mb-1">
+            {{ entry | doubleDigit }}
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
 
 <!-- Var olan tuş takımı ve input burada varsayılmıştır -->
-
-<!-- Geçmişi gösteren alan -->
-
-<div *ngIf="historyVisible" class="history-box">
-  <h3>Geçmiş</h3>
-  <ul>
-    <li *ngFor="let entry of history">
-      {{ entry | doubleDigit }}
-    </li>
-  </ul>
-</div>
