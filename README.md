@@ -16,6 +16,10 @@ Bu proje, modern ve kullanıcı dostu bir arayüze sahip, fonksiyonel ve respons
 - Temiz ve okunabilir kod yapısı
 
 ## Ekran Görüntüsü
+<<<<<<< HEAD
+=======
+> 
+>>>>>>> b259dbcd25cdafc3ed3a63d2c6a544e44336011f
 
 ![Ekran Görüntüsü](docs/screenshot.png)
 
