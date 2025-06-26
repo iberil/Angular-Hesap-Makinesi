@@ -1,8 +1,7 @@
 # Angular Hesap Makinesi
 
-<<<<<<< HEAD
-Bu proje, modern bir arayüze sahip, fonksiyonel ve responsive bir hesap makinesi uygulamasıdır. Proje Angular 20 ile geliştirilmiş olup, arayüzde Tailwind CSS kullanılmaktadır.
-=======
+# Bu proje, modern bir arayüze sahip, fonksiyonel ve responsive bir hesap makinesi uygulamasıdır. Proje Angular 20 ile geliştirilmiş olup, arayüzde Tailwind CSS kullanılmaktadır.
+
 Bu proje, modern ve kullanıcı dostu bir arayüze sahip, fonksiyonel ve responsive bir hesap makinesi uygulamasıdır. Proje Angular ile geliştirilmiş olup, arayüzde Tailwind CSS kullanılmaktadır.
 
 > > > > > > > 6b23199 (README.md dosyası güncellendi)
@@ -18,11 +17,8 @@ Bu proje, modern ve kullanıcı dostu bir arayüze sahip, fonksiyonel ve respons
 
 ## Ekran Görüntüsü
 
-<<<<<<< HEAD
+![Uygulama Ekran Görüntüsü](docs/screenshot.png)
 
->
-
-=======
 ![Ekran Görüntüsü](docs/screenshot.png)
 
 > > > > > > > 6b23199 (README.md dosyası güncellendi)
@@ -45,8 +41,6 @@ Bu proje, modern ve kullanıcı dostu bir arayüze sahip, fonksiyonel ve respons
    Ardından tarayıcınızda `http://localhost:4200` adresine gidin.
 
 ## Tailwind CSS Entegrasyonu
-
-<<<<<<< HEAD
 
 - # Projede [Tailwind CSS](https://tailwindcss.com/) v3 kullanılmaktadır.
 - Projede [Tailwind CSS](https://tailwindcss.com/) kullanılmaktadır.
