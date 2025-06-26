@@ -11,7 +11,7 @@ Bu proje, modern bir arayüze sahip, fonksiyonel ve responsive bir hesap makines
 - Temiz ve okunabilir kod yapısı
 
 ## Ekran Görüntüsü
-> ![Ekran Görüntüsü]("C:\Users\MONSTER\Pictures\Screenshots\Ekran görüntüsü 2025-06-26 151754.png")  
+> 
 
 
 ## Kurulum
