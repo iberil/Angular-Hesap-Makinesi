@@ -28,7 +28,11 @@
       "
       (click)="press(key)"
     >
-      {{ key }}
+      <ng-container *ngIf="key === 'G'; else normalKey">
+        <img src="assets/icons/history.svg" alt="Geçmiş" class="icon" />
+      </ng-container>
+
+      <ng-template #normalKey>{{ key }}</ng-template>
     </button>
   </div>
 </div>
@@ -36,6 +40,7 @@
 <!-- Var olan tuş takımı ve input burada varsayılmıştır -->
 
 <!-- Geçmişi gösteren alan -->
+
 <div *ngIf="historyVisible" class="history-box">
   <h3>Geçmiş</h3>
   <ul>

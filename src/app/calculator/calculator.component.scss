@@ -84,7 +84,9 @@
       gap: 6px;
 
       button {
-        font-size: 1rem;
+        font-size: 1.5rem;
+        line-height: 1;
+        padding: 0;
       }
     }
 
@@ -99,4 +101,11 @@
   padding: 0.5rem;
   border: 1px solid #ccc;
   background: #f9f9f9;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  object-fit: contain;
 }
