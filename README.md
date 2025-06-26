@@ -17,8 +17,6 @@ Bu proje, modern ve kullanıcı dostu bir arayüze sahip, fonksiyonel ve respons
 
 ## Ekran Görüntüsü
 
-![Uygulama Ekran Görüntüsü](docs/screenshot.png)
-
 ![Ekran Görüntüsü](docs/screenshot.png)
 
 > > > > > > > 6b23199 (README.md dosyası güncellendi)
